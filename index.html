@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title> Rapid Sports </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://freesvg.org/img/1396969821.png" />
+</head>
+
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark" >
+        <a class="solid" style="color:red;" " href="#mirage-health-clinic">Rapid Sports</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><img src="https://freesvg.org/img/1396969821.png" alt="logo" style="width:30px;">About Us</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#services"><img src="https://freesvg.org/img/Dumbell2.png" alt="logo" style="width:30px;">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Sport/Facility Search"><img src="https://freesvg.org/img/Re-Shoe-Clipart-2-2017070837-remix.png" alt="logo" style="width:30px;">Search for Facilities/Sports</a>
+            </li>  
+
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery"><img src="https://freesvg.org/img/sports-color-remix.png" alt="logo" style="width:30px;">Gallery</a>
+            </li> 
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="#doctors"><img src="https://freesvg.org/img/ballsports-cdcpd.png" alt="logo" style="width:30px;">Exercise And Have Fun</a>
+            </li> 
+         </ul>
+        </div>  
+      </nav>
+      </div>
+
+
+    <div class="container" id="appointment">
+        
+        <h2>Search for your sport facility</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#mySurvey">Search Here</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>Find your sport and facilty</h2>
+                        <p>Please fill in the form</p>
+                        <form>
+                          
+                            <label>Location: <input id="name" type="text" value=""></label><br>
+                            <!--
+                            <label>Location: <input id  = "phoneNumber" type="text" value="" placeholder="XXX-XXX-XXXX" pattern=" " required></label><br>
+                            -->
+                            <label>Choose Sports:</label>
+
+                            <select name="Rapid Service" >
+                                <option value="urgentCareAppointment">Soccer</option>
+                                <option value="educationWorkshops">Hockey</option>
+                                <option value="nutritionalCounselingDietaryManagment">Ice Skating</option>
+                                <option value="supportGroupsClasses">Swimming</option>
+                                <option value="patientPortalsForRapidClinicalCommunications">Basketball</option>
+                                <option value="supportGroupsClasses">American Football</option>
+                                <option value="supportGroupsClasses">Archery</option>
+                                <option value="supportGroupsClasses"> Artistic Swimming</option>
+                                <option value="supportGroupsClasses">Athletics</option>
+                                <option value="supportGroupsClasses">Badminton</option>
+                                <option value="supportGroupsClasses">Baseball</option>
+                                <option value="supportGroupsClasses">Basketball</option>
+                                <option value="supportGroupsClasses">Bowls</option>
+                                <option value="supportGroupsClasses">Boxing</option>
+                                <option value="supportGroupsClasses">Canoeing</option>
+                                <option value="supportGroupsClasses">Commonwealth Games</option>
+                                <option value="supportGroupsClasses">Cricket</option>
+                                <option value="supportGroupsClasses">Curling</option>
+                                <option value="supportGroupsClasses">Cycling</option>
+                                <option value="supportGroupsClasses">Darts</option>
+                                <option value="supportGroupsClasses">Disability Sport</option>
+                                <option value="supportGroupsClasses">Diving</option>
+                                <option value="supportGroupsClasses">Equestrian</option>
+                                <option value="supportGroupsClasses">Fencing</option>
+                                <option value="supportGroupsClasses">Football</option>
+                                <option value="supportGroupsClasses">Formula 1</option>
+                                <option value="supportGroupsClasses">Gaelic Games</option>
+                                <option value="supportGroupsClasses">Golf</option>
+                                <option value="supportGroupsClasses">Gymnastics</option>
+                                <option value="supportGroupsClasses">Handball</option>
+                                <option value="supportGroupsClasses">Hockey</option>
+                                <option value="supportGroupsClasses">Horse Racing</option>
+                                <option value="supportGroupsClasses">Ice Hockey</option>
+                                <option value="supportGroupsClasses">Judo</option>
+                                <option value="supportGroupsClasses">Karate</option>
+                                <option value="supportGroupsClasses">Mixed Martial Arts</option>
+                                <option value="supportGroupsClasses">Modern Pentathlon</option>
+                                <option value="supportGroupsClasses">Motorsport</option>
+                                <option value="supportGroupsClasses">Netball</option>
+                                <option value="supportGroupsClasses">Olympic Sports</option>
+                                <option value="supportGroupsClasses">Rowing</option>
+                                <option value="supportGroupsClasses">Rugby League</option>
+                                <option value="supportGroupsClasses">Rugby Union</option>
+                                <option value="supportGroupsClasses">Sailing</option>
+                                <option value="supportGroupsClasses">Shooting</option>
+                                <option value="supportGroupsClasses">Skateboarding</option>
+                                <option value="supportGroupsClasses">Snooker</option>
+                                <option value="supportGroupsClasses">Softball</option>
+                                <option value="supportGroupsClasses">Sport Climbing</option>
+                                <option value="supportGroupsClasses">Surfing</option>
+                                <option value="supportGroupsClasses">Swimming</option>
+                                <option value="supportGroupsClasses">Table Tennis</option>
+                                <option value="supportGroupsClasses">Taekwondo</option>
+                                <option value="supportGroupsClasses">Tennis</option>
+                                <option value="supportGroupsClasses">Triathlon</option>
+                                <option value="supportGroupsClasses">Volleyball</option>
+                                <option value="supportGroupsClasses">Water Polo</option>
+                                <option value="supportGroupsClasses">Weightlifting</option>
+                                <option value="supportGroupsClasses">Winter Sports *</option>
+                                <option value="supportGroupsClasses">Wrestling</option>
+                                
+
+
+
+
+                            </select>
+
+
+                            <label>Choose Sport Level:</label>
+
+                            <select name="mydoctors" id='selecter'>
+                                <option value="law">RECREATIONAL</option>
+                                <option value="chopper">INTERMEDIATE</option>
+                                <option value="kathryn">COMPETITIVE</option>
+                            </select>
+                            
+                            <br>
+
+                            
+
+                            <br>
+                            <br>
+                            <label>What Date: <input type="date" value=""></label>
+                    
+                          
+                            <label>What Time: <input id="timeBook" type="time" value=""></label> <br>
+                            
+                          
+                        
+
+                        <br>
+                       <button type="submit" class="btn btn-dark"  > Search </button>
+                   </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+
+    <p></p>
+    <p></p>
+
+    <p></p>
+	
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <h1> Rapid Sports </h1>
+        <center ><b> (Group 7: Rapid Sports)</b></center>
+        <p> Street: 550 Cumberland Street, Ottawa, Ontario </p>
+        <p> Phone: 613-777-9999 </p>
+    	<p> Email: rapidsports@gmail.com </p>
+    </div>
+    <div class="text-center">
+    	<img src="./images/sports.jpeg" width="1100" height="400" >
+	</div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+
+    <div class="container-md p-3 my-3 border bg-dark text-white" id="about">
+      <h2> About Us</h2>
+      <p> Are you struggling to join a sport team? Rapid sports is a service that helps people find the time to search for their favourite sport facilities.
+      </p>
+    </div>
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+
+
+ <!-- https://unsplash.com/photos/EW_rqoSdDes -->   
+
+</div>
+<div class="text-center">
+    <img src="./images/all.jpeg" width="1000" height="500" >
+</div>
+
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container" id="services">
+    	<span class="servicesimg"> <img width="50px" height="50px" src="https://freesvg.org/img/Dumbell2.png"/>  
+        <h2>Services</h2>
+        <p>Here is a list of services offered</p>            
+        <table class="table  table-hover">
+            <thead>
+            <tr>
+                <th>Services and Sports Offered</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Gym Facilities</td>
+                
+                
+            </tr>
+            <tr>
+            <td> Sports </td>
+            	
+       		 </tr>
+            <tr>
+                <td> Personal Trainning </td>
+                
+            </tr>
+            <tr>
+            	<td>Yoga Classes</td>
+            	
+            </tr>
+            <tr>
+                <td>Sport Arena</td>
+                
+            
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+   
+
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+   
+
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap 
+    
+    https://improb.com/best-medium-length-hairstyles-for-men/
+    https://www.pinterest.ca/pin/292100725822098719/
+
+-->
+    <div class="container" id="gallery">
+    <span class="appointmentsimg"> <img width="400px" height="250px" src="https://freesvg.org/img/ballsports-cdcpd.png"/> 
+    <h2>Caring. Collaborative. Careers.</h2>
+    <p>Health and Exercise. Better Lives.</p>   
+    <div >
+        <div class="column">
+          <img src="images/main.png" width="1000" height="350">
+
+
+          
+        </div>
+       
+      </div>
+    </div>
+    <p></p>
+    <p></p>
+
+
+
+
+
+
+  <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+   
+
+   
+
+
+  
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<footer>
+        <p>Website Designed By <a href="mailto:imiragesz@gmail.com"> ADM3133: Group 7</a>
+        </p>
+    </footer>
+
+</html>
+
